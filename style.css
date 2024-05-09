@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url(https://media.istockphoto.com/id/1428412216/pt/foto/a-male-chef-pouring-sauce-on-meal.webp?b=1&s=170667a&w=0&k=20&c=2JORkeatNkx7Mr8ztNlibCH2O2QwECJk8nxtF-JDG4A=);
+    background-position: center center;
+    background-size: cover;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, button {
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#rows {
+    margin: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+h1 {
+    background-color: black;
+    color: white;
+}
