@@ -11,37 +11,48 @@
 <body>
     <div class="navbar" id="navbar">
         <div class="logo">
-            <a href="#inicio"><img src="https://images.vexels.com/media/users/3/224174/isolated/lists/2f3f1f33abbb42fdbd2bd0926f684663-logotipo-do-talheres-no-prato.png" alt=""></a>
+            <a href="#inicio"><img
+                    src="https://images.vexels.com/media/users/3/224174/isolated/lists/2f3f1f33abbb42fdbd2bd0926f684663-logotipo-do-talheres-no-prato.png"
+                    alt=""></a>
         </div>
+        <br>
         <a href="#inicio">Início</a>
         <a href="#cardapio">Cardápio</a>
         <a href="#reserva">Faça uma Reserva</a>
         <a href="#faleconosco">Fale Conosco</a>
     </div>
 
-    <div id="inicio"></div>
+    <section id="inicio">
+        <div>
 
-    <div id="reserva">
-        <b><p>Faça uma Reserva<p></b>
-        <div class="container">
-            <div id="rows">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" placeholder="Seu nome">
-                
-                <label for="date">Data:</label>
-                <input type="date" id="date">
-                
-                <label for="time">Horário:</label>
-                <input type="time" id="time">
-                
-                <label for="guests">Número de Pessoas:</label>
-                <input type="number" id="guests" min="1" max="10">
-                
-                <button onclick="reserveTable()">Reservar Mesa</button>
-            </div>
         </div>
-        <div id="message"></div>
-    </div>
+    </section>
+
+    <section>
+        <div id="reserva">
+            <b>
+                <p>Faça uma Reserva<p>
+            </b>
+            <div class="container">
+                <div id="rows">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" placeholder="Seu nome">
+
+                    <label for="date">Data:</label>
+                    <input type="date" id="date">
+
+                    <label for="time">Horário:</label>
+                    <input type="time" id="time">
+
+                    <label for="guests">Número de Pessoas:</label>
+                    <input type="number" id="guests" min="1" max="10">
+
+                    <button onclick="reserveTable()">Reservar Mesa</button>
+                </div>
+            </div>
+            <div id="message"></div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 
