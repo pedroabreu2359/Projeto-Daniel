@@ -1,26 +1,41 @@
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f4f4f4;
     background-image: url(https://i.pinimg.com/736x/f9/64/2b/f9642b37cd61c61b7cb55c5d2a644350.jpg);
     background-position: center center;
     background-size: cover;
 }
 
-
 .navbar {
     position: fixed;
-    top: 0%;
+    top: 0;
     width: 100%;
     background-color: #007bff;
     padding: 20px 0;
     text-align: center;
     transition: top 0.3s;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.logo {
+    flex: 1;
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar a {
@@ -38,29 +53,50 @@ body {
 .navbar a:hover {
     color: white;
     text-decoration: underline;
-    margin: 0 15px;
 }
 
-p {
+.section-content {
+    padding: 120px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#reserva {
     display: flex;
     justify-content: center;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    font-size: 30px;
+    align-items: center;
+    height: 100vh;
+    padding-top: 120px;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    width: 200px;
-    height: 270px;
-    padding: 10px;
-    margin: 20px;
+    width: 300px;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+#message {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 label {
@@ -70,14 +106,14 @@ label {
 
 input, button {
     margin-bottom: 10px;
-    width: 100%;
+    width: calc(100% - 20px);
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 #rows {
-    margin: 10px;
-    padding: 10px;
+    width: 100%;
 }
 
 button {
@@ -88,14 +124,5 @@ button {
 }
 
 button:hover {
-    background-color: #b80000;
-}
-
-#message {
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
-    background-color:#007bff;
-    color: white;
-    border-radius: 5px;
+    background-color: #0055af;
 }
