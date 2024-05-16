@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
-    background-image: url(https://media.istockphoto.com/id/1428412216/pt/foto/a-male-chef-pouring-sauce-on-meal.webp?b=1&s=170667a&w=0&k=20&c=2JORkeatNkx7Mr8ztNlibCH2O2QwECJk8nxtF-JDG4A=);
+    background-image: url(https://i.pinimg.com/736x/f9/64/2b/f9642b37cd61c61b7cb55c5d2a644350.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -27,17 +27,37 @@ body {
     color: white;
     text-decoration: none;
     margin: 0 15px;
+    font-size: 20px;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar a:hover {
+    color: white;
+    text-decoration: underline;
+    margin: 0 15px;
 }
 
 p {
     display: flex;
     justify-content: center;
-    color: #1c7dbd;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
-    padding: 20px;
+    width: 200px;
+    height: 270px;
+    padding: 10px;
     margin: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -75,9 +95,7 @@ button:hover {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
-    color:#1861b4;
-}
-h1 {
-    background-color: black;
+    background-color:#007bff;
     color: white;
+    border-radius: 5px;
 }
