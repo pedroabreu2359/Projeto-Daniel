@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,7 +15,7 @@ body {
 
 .navbar {
     position: fixed;
-    top: -50px;
+    top: 0%;
     width: 100%;
     background-color: #007bff;
     padding: 20px 0;
@@ -32,7 +32,7 @@ body {
 p {
     display: flex;
     justify-content: center;
-    color: #007bff;
+    color: #1c7dbd;
 }
 
 .container {
@@ -68,14 +68,14 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #b80000;
 }
 
 #message {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
-    color:#007bff;
+    color:#1861b4;
 }
 h1 {
     background-color: black;
