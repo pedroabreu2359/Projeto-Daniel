@@ -12,6 +12,29 @@ body {
     background-size: cover;
 }
 
+
+.navbar {
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    background-color: #007bff;
+    padding: 20px 0;
+    text-align: center;
+    transition: top 0.3s;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: #007bff;
+}
+
 .container {
     background-color: #fff;
     padding: 20px;
@@ -52,6 +75,7 @@ button:hover {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
+    color:#007bff;
 }
 h1 {
     background-color: black;
