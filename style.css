@@ -104,7 +104,7 @@ label {
     display: block;
 }
 
-input, button {
+input, button, textarea, select {
     margin-bottom: 10px;
     width: calc(100% - 20px);
     padding: 10px;

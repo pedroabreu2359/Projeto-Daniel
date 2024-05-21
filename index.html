@@ -29,7 +29,8 @@
     <section id="inicio">
         <div class="section-content">
             <h1>Bem-vindo ao Nosso Restaurante</h1>
-            <p>Desfrute de uma experiência gastronômica única.</p>
+            <p>Desfrute de uma experiência gastronômica única, contando com pratos incríveis!</p>
+            <a href="#reserva">Faça sua reserva agora!</a>
         </div>
     </section>
 
@@ -68,6 +69,25 @@
         <div class="section-content">
             <h2>Fale Conosco</h2>
             <p>Entre em contato conosco para mais informações.</p>
+            <form action="./obrigado.html">
+                <label>Nome:</label>
+                <input type="text" name="nome" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Assunto:</label>
+                <select name="assunto">
+                    <option value="Elogio" selected>Elogio</option>
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Reclamação">Reclamação</option>
+                </select>
+
+                <label>Mensagem:</label>
+                <textarea name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </section>
 
