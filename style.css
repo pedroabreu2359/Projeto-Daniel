@@ -78,7 +78,6 @@ body {
     align-items: center;
     background-color: #fff;
     width: 300px;
-    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: relative;
@@ -128,5 +127,12 @@ button:hover {
 }
 
 .rodape {
-    background-color: aqua;
+    background-color: #007bff;
+
+  
+}
+
+.rodape p{
+    text-align: center;
+    padding: 20px;
 }
