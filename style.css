@@ -36,6 +36,7 @@ body {
     flex: 2;
     display: flex;
     justify-content: flex-end;
+   
 }
 
 .navbar a {
@@ -124,18 +125,50 @@ button:hover {
     background-color: #0055af;
 }
 
-.rodape {
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer {
     background-color: #007bff;
-
-  
-}
-
-.rodape p,h3{
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
-    color: white;
+    margin-top: auto;
 }
 
-.rodape h3{
-    font-size: 25px;
+.footer p {
+    margin: 0;
+    padding: 0;
 }
+
+.footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer nav ul li {
+    margin: 0 15px;
+}
+
+.footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer nav ul li a:hover {
+    color: #000000;
+    text-decoration:underline;
+}
+
+.h1feed{
+    text-align: center;
+    color:aquamarine;
+}
+
