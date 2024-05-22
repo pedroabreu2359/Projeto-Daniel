@@ -62,6 +62,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     margin: 20px;
     border-radius: 10px;
+    
 }
 
 .imagens {
@@ -75,6 +76,7 @@ body {
     border-radius: 5px;
     width: 275px;
     height: 183px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 #reserva {
@@ -155,6 +157,16 @@ button:hover {
 .footer p {
     margin: 0;
     padding: 0;
+}
+
+.p1{
+    transition: 0.5s;
+}
+
+.p1:hover{
+    text-decoration: underline;
+    color: #c5c29b;
+
 }
 
 .footer nav ul {
