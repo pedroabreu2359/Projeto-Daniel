@@ -53,7 +53,61 @@ button:hover {
     text-align: center;
     font-weight: bold;
 }
+<<<<<<< Updated upstream
 h1 {
     background-color: black;
     color: white;
 }
+=======
+
+
+/*cardapio*/
+
+.cardapio{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12 , 12, 12, 0.8);
+}
+.cardapio h2{
+    font-size: 5rem;
+    color: #0c0a0ae6;
+    text-transform: uppercase;
+}
+.itens-cardapio .info{
+border: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 1.5rem;
+}
+.itens-cardapio img{
+    width: 100%;
+    height: 200px;
+}
+.itens-cardapio .info h3{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+
+}
+.itens-cardapio .info h4{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: 0.6rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;        
+}
+.itens-cardapio .info h4 span{
+    font-size: 1.6rem;
+    color: #585858;
+    text-decoration: underline;
+}
+
+
+>>>>>>> Stashed changes
