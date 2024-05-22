@@ -1,23 +1,113 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f4f4f4;
-    background-image: url(https://media.istockphoto.com/id/1428412216/pt/foto/a-male-chef-pouring-sauce-on-meal.webp?b=1&s=170667a&w=0&k=20&c=2JORkeatNkx7Mr8ztNlibCH2O2QwECJk8nxtF-JDG4A=);
+    background-image: url(https://i.pinimg.com/736x/f9/64/2b/f9642b37cd61c61b7cb55c5d2a644350.jpg);
     background-position: center center;
     background-size: cover;
 }
 
-.container {
-    background-color: #fff;
-    padding: 20px;
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #007bff;
+    padding: 20px 0;
+    text-align: center;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.logo {
+    flex: 1;
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.section-content {
+    padding: 120px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 20px;
+    border-radius: 10px;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.imagens img{
+    border-radius: 5px;
+    width: 275px;
+    height: 183px;
+}
+
+#reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 120px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 300px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    padding: 20px;
+}
+
+#message {
+    bottom: -40px;
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 label {
@@ -25,16 +115,16 @@ label {
     display: block;
 }
 
-input, button {
+input, button, textarea, select {
     margin-bottom: 10px;
-    width: 100%;
+    width: calc(100% - 20px);
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 #rows {
-    margin: 10px;
-    padding: 10px;
+    width: 100%;
 }
 
 button {
@@ -45,69 +135,53 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0055af;
 }
 
-#message {
-    margin-top: 20px;
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    font-weight: bold;
+    margin-top: auto;
 }
-<<<<<<< Updated upstream
-h1 {
-    background-color: black;
-    color: white;
+
+.footer p {
+    margin: 0;
+    padding: 0;
 }
-=======
 
-
-/*cardapio*/
-
-.cardapio{
-    width: 100vw;
+.footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: rgba(12 , 12, 12, 0.8);
-}
-.cardapio h2{
-    font-size: 5rem;
-    color: #0c0a0ae6;
-    text-transform: uppercase;
-}
-.itens-cardapio .info{
-border: none;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 1.5rem;
-}
-.itens-cardapio img{
-    width: 100%;
-    height: 200px;
-}
-.itens-cardapio .info h3{
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    text-decoration: underline;
-
-}
-.itens-cardapio .info h4{
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        margin-bottom: 0.6rem;
-        display: grid;
-        justify-content: center;
-        align-items: center;        
-}
-.itens-cardapio .info h4 span{
-    font-size: 1.6rem;
-    color: #585858;
-    text-decoration: underline;
 }
 
+.footer nav ul li {
+    margin: 0 15px;
+}
 
->>>>>>> Stashed changes
+.footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer nav ul li a:hover {
+    color: #000000;
+    text-decoration:underline;
+}
+
+.h1feed{
+    text-align: center;
+    color:aquamarine;
+}
+
