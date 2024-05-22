@@ -64,6 +64,18 @@ body {
     border-radius: 10px;
 }
 
+.imagens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagens img{
+    border-radius: 5px;
+    width: 275px;
+    height: 183px;
+}
+
 #reserva {
     display: flex;
     justify-content: center;
